@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaside Serenity Villa</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <section class="properties-details-name-price-images-section">
+            <div class="properties-details-name-price">
+                <div class="properties-details-name">
+                    <h1 id="Product1-name">Seaside Serenity Villa</h1>
+                    <div class="properties-details-location-div">
+                        <img src="images/location.png" alt="">
+                        <p id="Product1-location">Vadodara,Gujrat</p>
+                    </div>
+                </div>
+                <div class="properties-details-price">
+                    <p>Price</p>
+                    <h1 id="Product1-price">₹2,00,00,000</h1>
+                </div>
+            </div>
+            <div class="properties-details-images-div">
+                <div class="properties-details-all-images">
+                    <img src="images/property01-01.jpg" id="Product1-image1" class="properties-details-all-image product1"  alt="">
+                    <img src="images/property01-02.jpg" id="Product1-image2" class="properties-details-all-image" alt="">
+                    <img src="images/property01-03.jpg" id="Product1-image3" class="properties-details-all-image" alt="">
+                </div>
+                <div class="properties-details-images-slider">
+                    <img id="main-image" src="" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="properties-details-description-keyfeatures-section">
+            <div class="properties-details-description-div">
+                <div class="properties-details-description">
+                    <h1>Description</h1>
+                    <p id="Product1-discription">Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan,
+                        breathtaking ocean views from every room, and direct access to a pristine sandy beach, this
+                        property is the epitome of coastal living.</p>
+                </div>
+                <div class="properties-details-description-other-details-cards-div">
+                    <div class="properties-details-description-other-details-card">
+                        <div class="properties-details-description-other-details-card-image-name">
+                            <img src="images/bedroom.png" alt="">
+                            <p>Beadrooms</p>
+                        </div>
+                        <p id="Product1-no-beadrooms">04</p>
+                    </div>
+                    <div class="properties-details-description-other-details-card">
+                        <div class="properties-details-description-other-details-card-image-name">
+                            <img src="images/bathroom.png" alt="">
+                            <p>Bathrooms</p>
+                        </div>
+                        <p id="Product1-no-bathrooms">03</p>
+                    </div>
+                    <div class="properties-details-description-other-details-card">
+                        <div class="properties-details-description-other-details-card-image-name">
+                            <img src="images/area.png" alt="">
+                            <p>Area</p>
+                        </div>
+                        <p id="Product1-area">2,500 Square Feet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer id="footer"></footer>
+</body>
+<script>
+    fetch("header.html")
+    .then(res => res.text())
+    .then(data => 
+    document.getElementById("header").innerHTML = data
+    )
+
+    fetch("footer.html")
+    .then(res => res.text())
+    .then(data => 
+    document.getElementById("footer").innerHTML = data
+    )
+
+    document.getElementById("main-image").src = document.querySelector(".product1").src
+
+    document.querySelectorAll(".properties-details-all-image").forEach(img =>{
+        console.log("img :",img);
+        
+        // document.getElementById("main-image").src = img[0].src
+        img.addEventListener("click",()=>{
+            document.querySelector(".properties-details-images-slider").innerHTML = `
+             <img src=${img.src} id="main-image" alt="">`            
+        })
+    })
+</script>
+
+<script>
+    document.getElementById("loader").style.display = "flex";
+    fetch("https://script.google.com/macros/s/AKfycbyze-06XMDRYk77V6ycVprtxc1DNjYjJtInbamuV-mR9c7N7jl_EwH9R3r8AVEn6FzS/exec")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.querySelectorAll(".product-title5").forEach(function (el) {
+                el.textContent = data.product_title5;
+            });
+                             
+            document.getElementById("c-get-in-touch").textContent = data.c_get_in_touch;
+            document.getElementById("c-description-1").textContent = data.c_description_1;
+            document.getElementById("c-email").textContent = data.c_email;
+            document.getElementById("c-phone").textContent = data.c_phone;
+            document.getElementById("c-location").textContent = data.c_location;
+            document.getElementById("c-discover-office-locations").textContent = data.c_discover_office_locations;
+            document.getElementById("c-location-description").textContent = data.c_location_description;
+            document.getElementById("connectus-gallary-image1").src = data.connectus_gallary_image1;
+            document.getElementById("connectus-gallary-image2").src = data.connectus_gallary_image_2;
+
+            document.getElementById("connectus-gallary-image3").src = data.connectus_gallary_image_3;
+            document.getElementById("connectus-gallary-image4").src = data.connectus_gallary_image4;
+            document.getElementById("connectus-gallary-image5").src = data.connectus_gallary_image5;
+            document.getElementById("c-title-2").textContent = data.c_title_2;
+            document.getElementById("c-description-2").textContent = data.c_description_2;
+            document.getElementById("connectus-gallary-image6").src = data.connectus_gallary_image6;
+        })
+        .catch(error => console.error("Error fetching data:", error))
+        .finally(() => {
+            // Add 1s delay, then fade out loader
+            setTimeout(() => {
+                const loader = document.getElementById("loader");
+                loader.classList.add("hide");
+                setTimeout(() => loader.style.display = "none", 500);
+            }, 1000);
+        });
+
+</script>
+
+</html>
