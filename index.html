@@ -9,11 +9,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>...</title>
+    <title>Comany Name</title>
+
 </head>
 
 <body>
-    <header id="header"></header>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+      <header id="header">
+    <section class="header-heading">
+      <p id="header-part">✨Discover Your Dream Property with ...</p>
+    </section>
+
+    <section class="header-logo-navigation">
+      <div id="header-logo">
+        <a href="/">
+          <img class="header-logo-image logo" src="images/logo.avif" alt="">
+        </a>
+      </div>
+
+      <nav id="header-navigation">
+        <div id="nav-close" onclick="toggleMenu()">×</div>
+        <ul class="header-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li class="dropdown"><a href="properties.html">Properties</a>
+            <ul class="dropdown-menu">
+              <li><a href="product1.html">Seaside Villa</a></li>
+              <li><a href="product2.html">Urban Apartment</a></li>
+              <li><a href="product3.html">Countryside Home</a></li>
+              <li><a href="product4.html">Luxury Penthouse</a></li>
+              <li><a href="product5.html">Mountain Cabin</a></li>
+              <li><a href="product6.html">New Cabin</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="header-button-div">
+        <a href="contactus.html#c-contact-form"><button class="header-button">Contact Us</button></a>
+      </div>
+
+      <div id="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </section>
+
+  </header>
     <main>
         <section class="main-banner-section" id="h-herosection">
             <div class="main-banner-div">
@@ -39,7 +83,7 @@
                         </div>
                         <div class="main-banner-info-card">
                             <h1 id="h-banner-card-number3">16+</h1>
-                            <p id="h-banner-card3">Years Of Experence</p>
+                            <p id="h-banner-card3">Years Of Experience</p>
                         </div>
                     </div>
                 </div>
@@ -81,20 +125,21 @@
                 </div>
             </div>
             <div class="main-feature-properties-cards-div">
-                <div class="main-feature-properties-card">
-                    <div class="main-feature-properties-card-image-div">
-                        <img id="h-section1-card-image-1" src="images/Property Image1.jpg"
-                            class="main-feature-properties-card-image" alt="">
-                    </div>
-                    <div class="main-feature-properties-card-titel-div">
-                        <h1 id="h-section1-card-name-1">Seaside Serenity Villa</h1>
-                        <p id="h-section1-card-description-1">A stunning 4-bedroom, 3-bathroom villa in a peaceful
-                            suburban neighborhood...<a href="">Read
-                                More</a></p>
-                    </div>
-                    
+                <a href="product1.html">
+                    <div class="main-feature-properties-card">
+                        <div class="main-feature-properties-card-image-div">
+                            <img id="h-section1-card-image-1" src="images/Property Image1.jpg"
+                                class="main-feature-properties-card-image" alt="">
+                        </div>
+                        <div class="main-feature-properties-card-titel-div">
+                            <h1 id="h-section1-card-name-1">Seaside Serenity Villa</h1>
+                            <p id="h-section1-card-description-1">A stunning 4-bedroom, 3-bathroom villa in a peaceful
+                                suburban neighborhood...<a href="">Read
+                                    More</a></p>
+                        </div>
 
-                    <!-- <div class="main-feature-properties-card-tags-div">
+
+                        <!-- <div class="main-feature-properties-card-tags-div">
                         <div class="main-feature-properties-card-tag">
                             <img src="images/bedroom.png" class="main-feature-properties-card-tag-image" alt="">
                             <p class="main-feature-properties-card-tag-name">4-Beadroom</p>
@@ -117,23 +162,25 @@
                             <button>View Propert Details</button>
                         </div>
                     </div> -->
-                </div>
-                <div class="main-feature-properties-card">
-                    <div class="main-feature-properties-card-image-div">
-                        <img id="h-section1-card-image-2" src="images/Property Image 2.jpg"
-                            class="main-feature-properties-card-image" alt="">
                     </div>
-                    <div class="main-feature-properties-card-titel-div">
-                        <h1 id="h-section1-card-name-2">Metropolitan Haven</h1>
-                        <p id="h-section1-card-description-2">A chic and fully-furnished 2-bedroom apartment with
-                            panoramic city views...
-                            <a href="">Read
-                                More</a>
-                             
-      
-                        </p>
-                    </div>
-                    <!-- <div class="main-feature-properties-card-tags-div">
+                </a>
+                <a href="product2.html">
+                    <div class="main-feature-properties-card">
+                        <div class="main-feature-properties-card-image-div">
+                            <img id="h-section1-card-image-2" src="images/Property Image 2.jpg"
+                                class="main-feature-properties-card-image" alt="">
+                        </div>
+                        <div class="main-feature-properties-card-titel-div">
+                            <h1 id="h-section1-card-name-2">Metropolitan Haven</h1>
+                            <p id="h-section1-card-description-2">A chic and fully-furnished 2-bedroom apartment with
+                                panoramic city views...
+                                <a href="">Read
+                                    More</a>
+
+
+                            </p>
+                        </div>
+                        <!-- <div class="main-feature-properties-card-tags-div">
                         <div class="main-feature-properties-card-tag">
                             <img src="images/bedroom.png" class="main-feature-properties-card-tag-image" alt="">
                             <p class="main-feature-properties-card-tag-name">2-Beadroom</p>
@@ -156,21 +203,24 @@
                             <button>View Propert Details</button>
                         </div>
                     </div> -->
-                </div>
-                <div class="main-feature-properties-card">
-                    <div class="main-feature-properties-card-image-div">
-                        <img id="h-section1-card-image-3" src="images/Property Image 3.jpg"
-                            class="main-feature-properties-card-image" alt="">
                     </div>
-                    <div  class="main-feature-properties-card-titel-div">
-                        <h1 id="h-section1-card-name-3">Rustic Retreat Cottage</h1>
-                        <p id="h-section1-card-description-3">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                            community...
-                            <a href="">Read
-                                More</a>
-                        </p>
-                        
-                        <!-- </div>
+                </a>
+                <a href="product3.html">
+                    <div class="main-feature-properties-card">
+                        <div class="main-feature-properties-card-image-div">
+                            <img id="h-section1-card-image-3" src="images/Property Image 3.jpg"
+                                class="main-feature-properties-card-image" alt="">
+                        </div>
+                        <div class="main-feature-properties-card-titel-div">
+                            <h1 id="h-section1-card-name-3">Rustic Retreat Cottage</h1>
+                            <p id="h-section1-card-description-3">An elegant 3-bedroom, 2.5-bathroom townhouse in a
+                                gated
+                                community...
+                                <a href="">Read
+                                    More</a>
+                            </p>
+
+                            <!-- </div>
                     <div class="main-feature-properties-card-tags-div">
                         <div class="main-feature-properties-card-tag">
                             <img src="images/bedroom.png" class="main-feature-properties-card-tag-image" alt="">
@@ -194,13 +244,16 @@
                             <button>View Propert Details</button>
                         </div>
                     </div> -->
+                        </div>
                     </div>
-                </div>
+                </a>
+
         </section>
         <section class="main-testimonial-section" id="h-testimonial">
             <div class="main-testimonial-title-div">
                 <h1> What Our Client Say</h1>
-                <p id="h-client-description">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose
+                <p id="h-client-description">Read the success stories and heartfelt testimonials from our valued
+                    clients. Discover why they chose
                     ... for their real estate needs.</p>
             </div>
             <div class="main-testimonials-div">
@@ -242,8 +295,8 @@
                     </div>
                 </div>
 
-                
-                
+
+
                 <div class="main-testimonial-card">
                     <div class="main-testimonial-rating">⭐⭐⭐⭐⭐</div>
                     <div class="main-testimonial-content">
@@ -289,43 +342,159 @@
                 </div>
             </div>
         </section>
-        <div id="loader">
-            <div class="spinner"></div>
-        </div>
+
 
 
     </main>
     <footer id="footer">
+        <!-- Heading Section -->
+        <section class="footer-heading-section">
+            <div class="footer-heading-content">
+                <h2>Start Your Real Estate Journey Today</h2>
+                <p>Your dream property is just a click away. Explore our available properties or contact our expert team
+                    to take
+                    the first step toward your real estate goals.</p>
+            </div>
+            <div class="footer-cta">
+                <button>Explore Properties</button>
+            </div>
+        </section>
+
+        <!-- Main Footer Content -->
+        <section class="footer-main">
+            <!-- Logo + Email -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="/">
+                        <img src="images/logo.avif" alt="Estatein Logo" class="logo" />
+                        <h3 class="comapy-name">Estatein</h3>
+                    </a>
+                </div>
+                <div class="footer-subscribe">
+                    <p id="f_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas
+                        temporibus officia amet laborum,
+                        eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <div>
+                    <h4>Quick Links</h4>
+                </div>
+                <div><a href="/">Home</a>
+                    <a href="aboutUs.html">About</a>
+                    <a href="properties.html">Properties</a>
+                    <a href="contactus.html">Contact</a>
+                </div>
+            </div>
+            <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+            <div class="footer-contact-us-div">
+                <div>
+                    <h4>Contact</h4>
+                </div>
+
+                <div class="footer-contact-us-div-content">
+                    <li class="footer-contact-us-links">
+                        <span>
+                            <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+                            <p>Call</p>
+                        </span>
+                        <a href="tel:+919090909090" id="f-mobile-number">+91 90909 09090</a>
+                    </li>
+                    <li class="footer-contact-us-links">
+                        <span>
+                            <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+                            <p>Email</p>
+                        </span>
+                        <a href="mailto:abc@gmail.com" id="f-email">abc@gmail.com</a>
+                    </li>
+                    <li class="footer-contact-us-links">
+                        <span>
+                            <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+                            <p>Address</p>
+                        </span>
+                        <span id="f_company_address">
+                            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+                                TF-A1-22, AKSHAR PAVILLION MALL,
+                                Vasna Bhayli Main Rd, near Priya Cinema 391410,
+                                Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+                            </a>
+                        </span>
+
+                    </li>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bottom Footer -->
+        <section class="footer-bottom">
+            <p id="f_last_line">&copy;2025.... All Rights Reserved.</p>
+<div class="footer-social">
+                <a href="#" class="facebook"><img src="images/facebook.png" alt="Facebook" /></a>
+                <a href="#" class="linkedin linkedin-logo"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                <a href="#" class="instagram"><img src="images/instagram.png" alt="Instagram" /></a>
+                <a href="#" class="X"><img src="images/x.png" alt="Twitter/X" /></a>
+                <a href="#" class="youtube"><img src="images/youtube.png" alt="YouTube" /></a>
+            </div>
+        </section>
     </footer>
 </body>
-<script>
-    fetch("header.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-
-            window.toggleMenu = function () {
-                const nav = document.getElementById("header-navigation");
-                nav.classList.toggle("open");
-            };
-        });
-
-    fetch("footer.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        })
-</script>
 
 <script>
+    // Show loader early
     document.getElementById("loader").style.display = "flex";
+
+    // Load dynamic data
     fetch("https://script.google.com/macros/s/AKfycbyze-06XMDRYk77V6ycVprtxc1DNjYjJtInbamuV-mR9c7N7jl_EwH9R3r8AVEn6FzS/exec")
-        .then(response => response.json())
+        .then(res => res.json())
         .then(data => {
+
             console.log(data);
-            document.querySelectorAll(".product-title5").forEach(function (el) {
-                el.textContent = data.product_title5;
-            });
+            document.getElementById("header-part").textContent = data.header_top_content;
+
+            document.querySelectorAll(".logo").forEach(el => {
+                el.src = data.logo;
+            })
+            document.querySelector(".comapy-name").textContent = data.compnany_name;
+
+            let year = new Date()
+            console.log("data.comnany_name :", data.comnany_name);
+            document.getElementById("f_last_line").innerHTML = `&copy; ${year.getFullYear()} ${data.compnany_name}. All Rights Reserved.`
+            document.getElementById("f_description").textContent = data.f_description
+            console.log("✅ Data fully loaded and DOM updated.");
+
+            const mobile_number = document.getElementById("f-mobile-number")
+            if (mobile_number) {
+                mobile_number.textContent = data.h_footer_mobile
+                mobile_number.href = `tel:=+91${data.h_footer_mobile}`
+            }
+
+            const email = document.getElementById("f-email")
+            if (email) {
+                email.textContent = data.h_footer_email
+                email.href = `mailto:${data.h_footer_email}`
+            }
+
+            document.getElementById("f_company_address").innerHTML = `
+            <a href="${data.h_map_link}">
+                                ${data.h_footer_address}
+                            </a>
+            `
+
+
             document.getElementById("h-banner-tagline").textContent = data.h_banner_tagline;
             document.getElementById("h-banner-description").textContent = data.h_banner_description;
             document.getElementById("h-banner-card-number1").textContent = data.h_banner_card_number1;
@@ -347,7 +516,7 @@
             document.getElementById("h-section1-card-image-1").src = data.h_section1_card_image_1;
             document.getElementById("h-section1-card-name-1").textContent = data.h_section1_card_name_1;
             document.getElementById("h-section1-card-description-1").textContent = data.h_section1_card_description_1;
-   
+
             document.getElementById("h-section1-card-image-2").src = data.h_section1_card_image_2;
             document.getElementById("h-section1-card-name-2").textContent = data.h_section1_card_name_2;
             document.getElementById("h-section1-card-description-2").textContent = data.h_section1_card_description_2;
@@ -355,7 +524,6 @@
             document.getElementById("h-section1-card-image-3").src = data.h_section1_card_image_3;
             document.getElementById("h-section1-card-name-3").textContent = data.h_section1_card_name_3;
             document.getElementById("h-section1-card-description-3").textContent = data.h_section1_card_description_3;
-
 
             document.getElementById("h-client-description").textContent = data.h_client_description;
 
@@ -369,23 +537,188 @@
             document.getElementById("h-testimonial-client-name-2").textContent = data.h_testimonial_client_name_2;
             document.getElementById("h-testimonial-client-country-2").textContent = data.h_testimonial_client_country_2;
 
-             document.getElementById("h-testimonial-tagline-3").textContent = data.h_testimonial_tagline_2;
+            document.getElementById("h-testimonial-tagline-3").textContent = data.h_testimonial_tagline_2;
             document.getElementById("h-testimonial-description-3").textContent = data.h_testimonial_description_3;
             document.getElementById("h-testimonial-client-name-3").textContent = data.h_testimonial_client_name_3;
             document.getElementById("h-testimonial-client-country-3").textContent = data.h_testimonial_client_country_3;
-         
-                              
+
+            document.querySelectorAll("facebook").forEach(el => el.href = data.facebook)
+            document.querySelectorAll(".instagram").forEach(el => el.href = data.instagram)
+            // Conditionally show or hide X (Twitter)
+            if (data.x && data.x.trim() !== "") {
+                document.querySelector(".X").style.display = "inline-block";
+                document.querySelector(".X").href = data.x;
+            }
+
+            // Conditionally show or hide YouTube
+            if (data.youtube && data.youtube.trim() !== "") {
+                document.querySelector(".youtube").style.display = "inline-block";
+                document.querySelector(".youtube").href = data.youtube;
+            }
+
+            // Conditionally show or hide LinkedIn
+            if (data.linkedin && data.linkedin.trim() !== "") {
+                document.querySelectorAll(".linkedin").forEach(el => el.style.display = "inline-block")
+                document.querySelector(".linkedin-logo").href = data.linkedin;
+            }
         })
-        .catch(error => console.error("Error fetching data:", error))
+        .catch(error => {
+            console.error("❌ Failed to load data:", error);
+            alert("Something went wrong while loading. Please refresh.");
+        })
         .finally(() => {
             // Add 1s delay, then fade out loader
             setTimeout(() => {
                 const loader = document.getElementById("loader");
                 loader.classList.add("hide");
-                setTimeout(() => loader.style.display = "none", 500);
-            }, 1000);
+                setTimeout(() => {
+                    loader.style.display = "none"
+                }, 500);
+
+                console.log("loader :", loader);
+
+            }, 2000);
         });
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .finally(() => {
+    //     console.log("✅ Hiding loader...");
+    //     const loader = document.getElementById("loader");
+
+    //     if (!loader) return;
+
+    //     // Apply fade-out class
+    //     loader.classList.add("hide");
+
+    //     // Wait for transition to finish (use once: true to avoid duplicates)
+    //     loader.addEventListener("transitionend", function () {
+    //         loader.style.display = "none";
+    //         console.log("✅ Loader fully hidden after transition");
+    //     }, { once: true });
+    // });
+
+
+
+
+    // console.log("Hiding loader");
+    // // ✅ Only hide loader after DOM update
+    // setTimeout(() => {
+    //     const loader = document.getElementById("loader");
+    //     loader.classList.add("hide");
+    //     setTimeout(() => loader.style.display = "none", 500);
+    // }, 2000); // You can tweak this delay
+
+
+
+
+
+    ////
+
+    // document.getElementById("loader").style.display = "flex";
+    // fetch("https://script.google.com/macros/s/AKfycbyze-06XMDRYk77V6ycVprtxc1DNjYjJtInbamuV-mR9c7N7jl_EwH9R3r8AVEn6FzS/exec")
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log(data);
+
+    //         document.getElementById("h-banner-tagline").textContent = data.h_banner_tagline;
+    //         document.getElementById("h-banner-description").textContent = data.h_banner_description;
+    //         document.getElementById("h-banner-card-number1").textContent = data.h_banner_card_number1;
+    //         document.getElementById("h-banner-card1").textContent = data.h_banner_card1;
+    //         document.getElementById("h-banner-card-number2").textContent = data.h_banner_card_number2;
+    //         document.getElementById("h-banner-card2").textContent = data.h_banner_card2;
+    //         document.getElementById("h-banner-card-number3").textContent = data.h_banner_card_number3;
+    //         document.getElementById("h-banner-card3").textContent = data.h_banner_card3;
+    //         document.getElementById("h-banner-image").src = data.h_banner_image;
+
+    //         document.getElementById("h-banner-cards-tagline-1").textContent = data.h_banner_cards_tagline_1;
+    //         document.getElementById("h-banner-cards-tagline-2").textContent = data.h_banner_cards_tagline_2;
+    //         document.getElementById("h-banner-cards-tagline-3").textContent = data.h_banner_cards_tagline_3;
+    //         document.getElementById("h-banner-cards-tagline-4").textContent = data.h_banner_cards_tagline_4;
+
+    //         document.getElementById("h-section1-name").textContent = data.h_section1_name;
+    //         document.getElementById("h-section1-description").textContent = data.h_section1_description;
+
+    //         document.getElementById("h-section1-card-image-1").src = data.h_section1_card_image_1;
+    //         document.getElementById("h-section1-card-name-1").textContent = data.h_section1_card_name_1;
+    //         document.getElementById("h-section1-card-description-1").textContent = data.h_section1_card_description_1;
+
+    //         document.getElementById("h-section1-card-image-2").src = data.h_section1_card_image_2;
+    //         document.getElementById("h-section1-card-name-2").textContent = data.h_section1_card_name_2;
+    //         document.getElementById("h-section1-card-description-2").textContent = data.h_section1_card_description_2;
+
+    //         document.getElementById("h-section1-card-image-3").src = data.h_section1_card_image_3;
+    //         document.getElementById("h-section1-card-name-3").textContent = data.h_section1_card_name_3;
+    //         document.getElementById("h-section1-card-description-3").textContent = data.h_section1_card_description_3;
+
+
+    //         document.getElementById("h-client-description").textContent = data.h_client_description;
+
+    //         document.getElementById("h-testimonial-tagline-1").textContent = data.h_testimonial_tagline_1;
+    //         document.getElementById("h-testimonial-description-1").textContent = data.h_testimonial_description_1;
+    //         document.getElementById("h-testimonial-client-name-1").textContent = data.h_testimonial_client_name_1;
+    //         document.getElementById("h-testimonial-client-country-1").textContent = data.h_testimonial_client_country_1;
+
+    //         document.getElementById("h-testimonial-tagline-2").textContent = data.h_testimonial_tagline_2;
+    //         document.getElementById("h-testimonial-description-2").textContent = data.h_testimonial_description_2;
+    //         document.getElementById("h-testimonial-client-name-2").textContent = data.h_testimonial_client_name_2;
+    //         document.getElementById("h-testimonial-client-country-2").textContent = data.h_testimonial_client_country_2;
+
+    //         document.getElementById("h-testimonial-tagline-3").textContent = data.h_testimonial_tagline_2;
+    //         document.getElementById("h-testimonial-description-3").textContent = data.h_testimonial_description_3;
+    //         document.getElementById("h-testimonial-client-name-3").textContent = data.h_testimonial_client_name_3;
+    //         document.getElementById("h-testimonial-client-country-3").textContent = data.h_testimonial_client_country_3;
+
+    //     })
+    //     .catch(error => console.error("Error fetching data:", error))
+    //     .finally(() => {
+    //         setTimeout(() => {
+    //             // Fully remove from view after fade-out
+    //             const loader = document.getElementById("loader");
+    //             loader.classList.add("hide");
+    //             setTimeout(() => loader.style.display = "none", 500)
+    //         }, 2000);
+    //     })
 
 </script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("header-navigation");
+      nav.classList.toggle("open");
+    }
+  </script>
 
 </html>

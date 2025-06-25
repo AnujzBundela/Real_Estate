@@ -13,7 +13,50 @@
 </head>
 
 <body>
-    <header id="header"></header>
+            <div id="loader">
+            <div class="spinner"></div>
+            </div>
+      <header id="header">
+    <section class="header-heading">
+      <p id="header-part">✨Discover Your Dream Property with ...</p>
+    </section>
+
+    <section class="header-logo-navigation">
+      <div id="header-logo">
+        <a href="/">
+          <img class="header-logo-image logo" src="images/logo.avif" alt="">
+        </a>
+      </div>
+
+      <nav id="header-navigation">
+        <div id="nav-close" onclick="toggleMenu()">×</div>
+        <ul class="header-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li class="dropdown"><a href="properties.html">Properties</a>
+            <ul class="dropdown-menu">
+              <li><a href="product1.html">Seaside Villa</a></li>
+              <li><a href="product2.html">Urban Apartment</a></li>
+              <li><a href="product3.html">Countryside Home</a></li>
+              <li><a href="product4.html">Luxury Penthouse</a></li>
+              <li><a href="product5.html">Mountain Cabin</a></li>
+              <li><a href="product6.html">New Cabin</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="header-button-div">
+        <a href="contactus.html#c-contact-form"><button class="header-button">Contact Us</button></a>
+      </div>
+
+      <div id="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </section>
+
+  </header>
     <main>
         <section class="aboutus-banner-section" id="a-ourjourney">
             <div class="aboutus-banner-content">
@@ -339,38 +382,119 @@
 
           
         </section> -->
-        <div id="loader">
-            <div class="spinner"></div>
-            </div>
+
 
     </main>
 
     
-     <footer id="footer"></footer>
+    <footer id="footer">
+        <!-- Heading Section -->
+        <section class="footer-heading-section">
+            <div class="footer-heading-content">
+                <h2>Start Your Real Estate Journey Today</h2>
+                <p>Your dream property is just a click away. Explore our available properties or contact our expert team
+                    to take
+                    the first step toward your real estate goals.</p>
+            </div>
+            <div class="footer-cta">
+                <button>Explore Properties</button>
+            </div>
+        </section>
+
+        <!-- Main Footer Content -->
+        <section class="footer-main">
+            <!-- Logo + Email -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="/">
+                        <img src="images/logo.avif" alt="Estatein Logo" class="logo" />
+                        <h3 class="comapy-name">Estatein</h3>
+                    </a>
+                </div>
+                <div class="footer-subscribe">
+                    <p id="f_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas
+                        temporibus officia amet laborum,
+                        eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <div>
+                    <h4>Quick Links</h4>
+                </div>
+                <div><a href="/">Home</a>
+                    <a href="aboutUs.html">About</a>
+                    <a href="properties.html">Properties</a>
+                    <a href="contactus.html">Contact</a>
+                </div>
+            </div>
+            <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+            <div class="footer-contact-us-div">
+                <div>
+                    <h4>Contact</h4>
+                </div>
+
+                <div class="footer-contact-us-div-content">
+                    <li class="footer-contact-us-links">
+                        <span>
+                            <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+                            <p>Call</p>
+                        </span>
+                        <a href="tel:+919090909090" id="f-mobile-number">+91 90909 09090</a>
+                    </li>
+                    <li class="footer-contact-us-links">
+                        <span>
+                            <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+                            <p>Email</p>
+                        </span>
+                        <a href="mailto:abc@gmail.com" id="f-email">abc@gmail.com</a>
+                    </li>
+                    <li class="footer-contact-us-links">
+                        <span>
+                            <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+                            <p>Address</p>
+                        </span>
+                        <span id="f_company_address">
+                            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+                                TF-A1-22, AKSHAR PAVILLION MALL,
+                                Vasna Bhayli Main Rd, near Priya Cinema 391410,
+                                Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+                            </a>
+                        </span>
+
+                    </li>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bottom Footer -->
+        <section class="footer-bottom">
+            <p id="f_last_line">&copy;2025.... All Rights Reserved.</p>
+<div class="footer-social">
+                <a href="#" class="facebook"><img src="images/facebook.png" alt="Facebook" /></a>
+                <a href="#" class="linkedin linkedin-logo"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                <a href="#" class="instagram"><img src="images/instagram.png" alt="Instagram" /></a>
+                <a href="#" class="X"><img src="images/x.png" alt="Twitter/X" /></a>
+                <a href="#" class="youtube"><img src="images/youtube.png" alt="YouTube" /></a>
+            </div>
+        </section>
+    </footer>
 
      
 </body>
-
-
-<script>
-  fetch("header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
-
-      window.toggleMenu = function () {
-        const nav = document.getElementById("header-navigation");
-        nav.classList.toggle("open");
-      };
-    });
-
-    fetch("footer.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("footer").innerHTML = data;
-    })
-</script>
-
 
 <script>
     document.getElementById("loader").style.display = "flex";
@@ -378,9 +502,37 @@
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            document.querySelectorAll(".product-title5").forEach(function (el) {
-                el.textContent = data.product_title5;
-            });
+        document.getElementById("header-part").textContent = data.header_top_content;
+
+document.querySelectorAll(".logo").forEach(el => {
+                el.src = data.logo;
+            })
+            document.querySelector(".comapy-name").textContent = data.compnany_name;
+
+            let year = new Date() 
+            console.log("data.comnany_name :",data.comnany_name);
+            document.getElementById("f_last_line").innerHTML= `&copy; ${year.getFullYear()} ${data.compnany_name}. All Rights Reserved.`
+            document.getElementById("f_description").textContent = data.f_description
+            console.log("✅ Data fully loaded and DOM updated.");
+
+            const mobile_number = document.getElementById("f-mobile-number")
+            if(mobile_number){                
+                mobile_number.textContent = data.h_footer_mobile
+                mobile_number.href = `tel:=+91${data.h_footer_mobile}`
+            } 
+
+            const email = document.getElementById("f-email")
+            if(email){                
+                email.textContent = data.h_footer_email
+                email.href = `mailto:${data.h_footer_email}`
+            } 
+
+            document.getElementById("f_company_address").innerHTML = `
+            <a href="${data.h_map_link}">
+                                ${data.h_footer_address}
+                            </a>
+            `
+
             document.getElementById("a-banner-name").textContent = data.a_banner_name;
             document.getElementById("a-banner-description").textContent = data.a_banner_description;
             document.getElementById("a-banner-card-number1").textContent = data.a_banner_card_number1;
@@ -422,9 +574,28 @@
             document.getElementById("a-team-person-position-3").textContent = data.a_team_person_position_3;
             document.getElementById("a-team-image-4").src = data.a_team_image_4;
             document.getElementById("a-team-person-name-4").textContent = data.a_team_person_name_4;
-            document.getElementById("a-team-person-position-4").textContent = data.a_team_person_position        
+            document.getElementById("a-team-person-position-4").textContent = data.a_team_person_position_4;        
          
-                              
+            
+                        document.querySelectorAll("facebook").forEach(el => el.href = data.facebook)
+            document.querySelectorAll(".instagram").forEach(el => el.href = data.instagram)
+            // Conditionally show or hide X (Twitter)
+            if (data.x && data.x.trim() !== "") {
+                document.querySelector(".X").style.display = "inline-block";
+                document.querySelector(".X").href = data.x;
+            }
+
+            // Conditionally show or hide YouTube
+            if (data.youtube && data.youtube.trim() !== "") {
+                document.querySelector(".youtube").style.display = "inline-block";
+                document.querySelector(".youtube").href = data.youtube;
+            }
+
+            // Conditionally show or hide LinkedIn
+            if (data.linkedin && data.linkedin.trim() !== "") {
+                document.querySelectorAll(".linkedin").forEach(el => el.style.display = "inline-block")
+                document.querySelector(".linkedin-logo").href = data.linkedin;
+            }
         })
         .catch(error => console.error("Error fetching data:", error))
         .finally(() => {
@@ -432,10 +603,23 @@
             setTimeout(() => {
                 const loader = document.getElementById("loader");
                 loader.classList.add("hide");
-                setTimeout(() => loader.style.display = "none", 500);
-            }, 1000);
+                setTimeout(() => {
+                    loader.style.display = "none"
+                }, 500);
+
+                console.log("loader :",loader);
+                
+            }, 2000);
         });
 
+
 </script>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("header-navigation");
+      nav.classList.toggle("open");
+    }
+  </script>
 
 </html>
